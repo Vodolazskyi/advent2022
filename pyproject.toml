@@ -6,6 +6,9 @@ authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+memory-profiler = "^0.61.0"
+matplotlib = "^3.6.2"
+scalene = "^1.5.16"
 
 [tool.poetry.dev-dependencies]
 black = "^22.10.0"

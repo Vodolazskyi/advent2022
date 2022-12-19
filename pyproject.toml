@@ -1,21 +1,25 @@
 [tool.poetry]
+authors = ["Oleksandr Vodolazskyi <oleksandr.vodolazskyi@gmail.com>"]
+description = ""
 name = "advent2022"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-memory-profiler = "^0.61.0"
 matplotlib = "^3.6.2"
+memory-profiler = "^0.61.0"
+python = "^3.10"
 scalene = "^1.5.16"
+tqdm = "^4.64.1"
 
 [tool.poetry.dev-dependencies]
 black = "^22.10.0"
-flake8 = "^6.0.0"
-isort = "^5.10.1"
 ipython = "^8.7.0"
+ruff = "^0.0.183"
+ipykernel = "^6.19.2"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.ruff]
+unfixable = ["F401"]
